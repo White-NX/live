@@ -1,4 +1,4 @@
-<!DOCTYPE HTML<>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -34,11 +34,15 @@
         <div>
             <div id="streamURL">
                 <div class="url-input">
-                    <label for="sURL">Stream URL:</label>
-                    <input id="sURL" type="text" value="http://127.0.0.1/flv/7182741-1.flv" />
+                    <div class="mdui-container">
+                        <div class="mdui-textfield mdui-textfield-floating-label">
+                          <label class="mdui-textfield-label" for="sURL">flv地址</label>
+                          <input id="sURL" class="mdui-textfield-input" type="text" value="http://127.0.0.1/flv/7182741-1.flv" />
+                        </div>
+                      </div>
                     <button onclick="switch_mds()" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-light-blue">切换到JSON引流</button>
                 </div>
-                <div class="options">
+                <div class="options hidden">
                     <label for="isLive" class="mdui-list-item mdui-ripple">
                         <div class="mdui-checkbox">
                             <input type="checkbox" id="isLive" onchange="saveSettings()" />
@@ -72,9 +76,13 @@
             </div>
             <div id="mediaSourceURL" class="hidden">
                 <div class="url-input">
-                    <label for="msURL">MediaDataSource JsonURL:</label>
-                    <input id="msURL" type="text" value="http://127.0.0.1/flv/7182741.json" />
-                    <button onclick="switch_url()" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-light-blue">切换到URL引流</button>
+                    <div class="mdui-container">
+                        <div class="mdui-textfield mdui-textfield-floating-label">
+                          <label class="mdui-textfield-label" for="msURL">JSON url</label>
+                          <input class="mdui-textfield-input" id="msURL" type="text" value="http://127.0.0.1/flv/7182741.json"/>
+                        </div>
+                      </div>
+                    <button onclick="switch_url()" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-light-blue">切换到flv引流</button>
                 </div>
             </div>
         </div>

@@ -36,18 +36,6 @@
     
     <div class="mainContainer">
         <div>
-            <div id="streamURL">
-                <div class="url-input hidden">
-                    <div class="mdui-container">
-                        <div class="mdui-textfield mdui-textfield-floating-label">
-                          <label class="mdui-textfield-label" for="sURL">flv地址</label>
-                          <input id="sURL" class="mdui-textfield-input" type="text" value="https://js.live-play.acgvideo.com/live-js/977223/live_25828081_6129630.flv?wsSecret=fc9b5c04a75f3069f318a479f4ea14c8&wsTime=1585454653&trid=e8b1fcaf90cf4b458464f0847b1d28f5&pt=web&oi=0&order=1&sig=no&platform=web&pSession=CyzrNp7n-rCdQ-4BiM-wzBt-MdY7RZk7H2XN
-
-" />
-                        </div>
-                      </div>
-                    <button onclick="switch_mds()" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-light-blue">切换到JSON引流</button>
-                </div>
                 <div class="options hidden">
                     <label for="isLive" class="mdui-list-item mdui-ripple">
                         <div class="mdui-checkbox">
@@ -106,7 +94,19 @@
         <div class="mdui-panel" mdui-panel>
 
             <div class="mdui-panel-item">
-              <div class="mdui-panel-item-header">查看日志</div>
+              <div class="mdui-panel-item-header">Debug菜单</div>
+                <div id="streamURL">
+                <div class="url-input hidden">
+                    <div class="mdui-container">
+                        <div class="mdui-textfield mdui-textfield-floating-label">
+                          <label class="mdui-textfield-label" for="sURL">flv地址</label>
+                          <input id="sURL" class="mdui-textfield-input" type="text" value="https://js.live-play.acgvideo.com/live-js/977223/live_25828081_6129630.flv?wsSecret=fc9b5c04a75f3069f318a479f4ea14c8&wsTime=1585454653&trid=e8b1fcaf90cf4b458464f0847b1d28f5&pt=web&oi=0&order=1&sig=no&platform=web&pSession=CyzrNp7n-rCdQ-4BiM-wzBt-MdY7RZk7H2XN
+
+" />
+                        </div>
+                      </div>
+                    <button onclick="switch_mds()" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-light-blue">切换到JSON引流</button>
+                </div>
               <div class="mdui-panel-item-body">
                 <textarea name="logcatbox" class="logcatBox" rows="10" readonly></textarea>
               </div>
